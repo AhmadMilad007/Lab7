@@ -101,9 +101,6 @@
 
             }
           )
-          .catch (function (error){
-                output.innerHTML = error; 
-          });
       }
 
       // This function should fetch one entry from the given endpoint.
@@ -219,11 +216,6 @@
                   if (response.status!==200){
                     document.getElementById('output').innerHTML = 'Netwrok Error : ' + response.status;
                     return;
-                  }
-                  else {
-
-                  document.getElementById('output').innerHTML = "Deleted The Following Record number: " + inputid;
-                  
                   }
             }
             
