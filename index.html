@@ -216,12 +216,12 @@
                   if (response.status!==200){
                     document.getElementById('output').innerHTML = 'Netwrok Error : ' + response.status;
                     return;
-                  }
-                  document.getElementById('output').innerHTML = 'Record number ' + inputId + ' deleted'
+                  }   
             }
-            
           )
-
+          .then (
+                  document.getElementById('output').innerHTML = 'Record number ' + inputId + ' deleted'
+          )
       }
       //helper to display output
       function displayData(dataD){
