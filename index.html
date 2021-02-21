@@ -220,6 +220,9 @@
             }
             
           )
+          .then (
+            document.getElementById('output').innerHTML = "Record number " + inputId + " deleted"
+          )
       }
       //helper to display output
       function displayData(dataD){
